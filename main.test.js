@@ -2,11 +2,16 @@
  * YOUR CODE HERE *
  ******************/
 //#1//
-
+let count2 = 0;
 const addAll = function (arr){
 for (const currentArr of arr){
 //what function adds all the values of the array?
+if (isNaN(currentArr)) { 
+  continue; 
+} 
+count2 = count + Number(currentArr);
 }
+return count2;
 }
 console.log([2, 3, 5]);
 

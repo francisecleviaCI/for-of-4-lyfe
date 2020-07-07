@@ -1,8 +1,83 @@
 /******************
  * YOUR CODE HERE *
  ******************/
+//#1//
+
+const addAll = function (arr){
+for (const currentArr of arr){
+//what function adds all the values of the array?
+}
+}
+console.log([2, 3, 5]);
+
+//#2//
+let count = 0;
+const countSpaces = function(string){
+for (const newString of string){
+    if (newString === ' '){
+    count = count + 1;
+}
+}
+return count;
+}
+console.log(countSpaces('Hello mynameisFrancis'));
 
 
+//#3//
+let count1 = 0;
+const countTrues = function(booleans){
+for (const newBooleans of booleans){
+  if (newBooleans === true ){
+    count1 = count1 + 1;
+} 
+}
+return count1;
+}
+console.log(count1);
+
+//#4//
+const makeFriendly = function(sentence){
+  let result = ''
+  for (const newSentence of sentence){
+    if (newSentence === '.'){
+      result = result + '!'
+    } else {
+      result = result + newSentence;
+    }
+  }
+return result;
+}
+console.log(makeFriendly('hello. my name is francis.'))
+
+//#5//
+const cubeAll = function (array){
+const result = [];
+for (const newArray of array){
+  result.push(newArray * newArray * newArray)
+}
+return result;
+}
+
+//#6//
+const addNoises = function (animals){
+const animalNoises = [];
+for (const newAnimals of animals){
+  if (newAnimals === 'Fido'){
+  animalNoises = animalNoises + newAnimals + ' says' + " Woof!";
+  } else if (newAnimals === 'Garfield'){
+    animalNoises = animalNoises + newAnimals + ' says' + " Meow!";
+  } else if (newAnimals === 'Maisie'){
+    animalNoises = animalNoises + newAnimals + ' says' + " Woof!";
+  } else if (newAnimals === 'Rolph'){
+    animalNoises = animalNoises + newAnimals + ' says' + " Woof!";
+  } else if (newAnimals === 'Barnie'){
+    animalNoises = animalNoises + newAnimals + ' says' + " ROWR";
+  } else if (newAnimals === 'Sharp Tooth'){
+    animalNoises = animalNoises + newAnimals + ' says' + " ROWR!";
+}
+}
+return animalNoises;
+}
 
 
 
